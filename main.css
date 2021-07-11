@@ -1,0 +1,768 @@
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=PT+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  height: 100%;
+  background-color: #1F2025;
+}
+
+._cabecalho {
+  position: relative;
+  font-size: 2.6vw;
+  -webkit-animation: fade 1ms 1s forwards;
+          animation: fade 1ms 1s forwards;
+  opacity: 0;
+  color: #e5e5e5;
+  text-align: center;
+  top: 50px;
+  font-family: "Bad Script", cursive;
+  margin: 0 auto;
+}
+
+._cabecalho::after {
+  -webkit-animation: text-reveal 3s ease forwards;
+          animation: text-reveal 3s ease forwards;
+  background-color: #1F2025;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+._entrada {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3.75em auto 0 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.item {
+  height: 1.5625em;
+  padding: 0.3125em;
+  margin-top: 4.375em;
+}
+
+.item:first-child {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+
+.seta {
+  width: 1.5625em;
+  height: 1.5625em;
+  padding-top: 0.3125em;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  -webkit-animation: is-bouncing 0.5s ease-in alternate infinite;
+          animation: is-bouncing 0.5s ease-in alternate infinite;
+}
+
+._button {
+  width: 7em;
+  padding: 11px;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #3EA6FF;
+  color: #1F2025;
+  font-family: "Rubik", sans-serif;
+}
+
+._input {
+  width: 9em;
+  padding: 5px;
+  -webkit-box-shadow: 0px 3px 6px #777777;
+          box-shadow: 0px 3px 6px #777777;
+  border-radius: 8px;
+  outline: none;
+  text-align: center;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-delay: 300ms;
+          transition-delay: 300ms;
+  border: none;
+  background-color: #fff;
+  font-size: 1.4em;
+  font-family: "Rubik", sans-serif;
+  color: #636161;
+}
+
+._input:focus {
+  -webkit-transform: translateX(3%) scale(200%);
+          transform: translateX(3%) scale(200%);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #636161;
+}
+
+._input::-webkit-input-placeholder {
+  color: #bebaba;
+  font-size: 0.8em;
+}
+
+._input:-ms-input-placeholder {
+  color: #bebaba;
+  font-size: 0.8em;
+}
+
+._input::-ms-input-placeholder {
+  color: #bebaba;
+  font-size: 0.8em;
+}
+
+._input::placeholder {
+  color: #bebaba;
+  font-size: 0.8em;
+}
+
+._input:focus::-webkit-input-placeholder {
+  font-size: 0;
+}
+
+._input:focus:-ms-input-placeholder {
+  font-size: 0;
+}
+
+._input:focus::-ms-input-placeholder {
+  font-size: 0;
+}
+
+._input:focus::placeholder {
+  font-size: 0;
+}
+
+.cartao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 280px;
+}
+
+#card1,
+#card2,
+#card3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+
+.flip1,
+.flip2,
+.flip3 {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 200px;
+  color: #DEDFE4;
+}
+
+#frente {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  background-color: #1F2025;
+}
+
+#verso {
+  color: #DEDFE4;
+  background-color: #292A2F;
+}
+
+.face {
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  height: 25vw;
+  width: 38vh;
+  font-family: "PT Mono", monospace;
+  font-weight: lighter;
+  -ms-flex-preferred-size: 1fr 1fr 1fr;
+      flex-basis: 1fr 1fr 1fr;
+  margin: 0px auto;
+}
+
+#pai1,
+#pai2,
+#pai3 {
+  text-align: center;
+  font-size: 2.6em;
+  margin-top: 50px;
+}
+
+#filho1,
+#filho2,
+#filho3 {
+  text-align: center;
+  margin-bottom: 80px;
+  word-break: break-all;
+}
+
+@-webkit-keyframes text-reveal {
+  from {
+    -webkit-transform: translateX(-101%);
+            transform: translateX(-101%);
+  }
+  to {
+    -webkit-transform: translateX(101%);
+            transform: translateX(101%);
+  }
+}
+
+@keyframes text-reveal {
+  from {
+    -webkit-transform: translateX(-101%);
+            transform: translateX(-101%);
+  }
+  to {
+    -webkit-transform: translateX(101%);
+            transform: translateX(101%);
+  }
+}
+
+@-webkit-keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes is-bouncing {
+  to {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+}
+
+@keyframes is-bouncing {
+  to {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+}
+
+@-webkit-keyframes is-rippling {
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.25, 1.6);
+            transform: scale(1.25, 1.6);
+  }
+}
+
+@keyframes is-rippling {
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.25, 1.6);
+            transform: scale(1.25, 1.6);
+  }
+}
+
+@media screen and (max-width: 1461px) {
+  .face {
+    height: 32vw;
+    width: 36vh;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .face {
+    height: 33vw;
+    width: 33vh;
+  }
+  #filho1,
+  #filho2,
+  #filho3 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 1165px) {
+  .face {
+    height: 33vw;
+    width: 32vh;
+  }
+  #filho1,
+  #filho2,
+  #filho3 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 1148px) {
+  .face {
+    height: 37vw;
+    width: 34vh;
+  }
+}
+
+@media screen and (max-width: 1126px) {
+  .face {
+    height: 37vw;
+    width: 31vh;
+  }
+  #filho1,
+  #filho2,
+  #filho3 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 1033px) {
+  .face {
+    height: 40vw;
+    width: 29vh;
+  }
+  #pai1,
+  #pai2,
+  #pai3 {
+    font-size: 2em;
+  }
+  #filho1,
+  #filho2,
+  #filho3 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (width: 1024px) {
+  .face {
+    height: 40vw;
+    width: 24vh;
+  }
+}
+
+@media screen and (max-width: 963px) {
+  .face {
+    height: 39vw;
+    width: 26vh;
+  }
+  #filho1,
+  #filho2,
+  #filho3 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 873px) {
+  .face {
+    height: 44vw;
+    width: 23vh;
+  }
+  #filho1,
+  #filho2,
+  #filho3 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .face {
+    height: 47vw;
+    width: 22vh;
+  }
+  #pai1,
+  #pai2,
+  #pai3 {
+    font-size: 1.7em;
+  }
+  #filho1,
+  #filho2,
+  #filho3 {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (max-width: 743px) {
+  .face {
+    height: 47vw;
+    width: 20vh;
+  }
+  #pai1,
+  #pai2,
+  #pai3 {
+    font-size: 1.6em;
+  }
+  #filho1,
+  #filho2,
+  #filho3 {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (max-width: 686px) {
+  .face {
+    height: 46vw;
+    width: 19vh;
+  }
+  #pai1,
+  #pai2,
+  #pai3 {
+    font-size: 1.6em;
+  }
+  #filho1,
+  #filho2,
+  #filho3 {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (max-width: 624px) {
+  .face {
+    height: 50vw;
+    width: 17vh;
+  }
+  #pai1,
+  #pai2,
+  #pai3 {
+    font-size: 1.4em;
+  }
+  #filho1,
+  #filho2,
+  #filho3 {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  body {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  ._cabecalho {
+    font-size: 4vmin;
+    line-height: 11vw;
+    padding-top: 11px;
+  }
+  ._entrada {
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  ._input {
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 9em;
+    height: 2em;
+    border-radius: 10px;
+    margin: 20px auto 8px auto;
+  }
+  ._input:focus {
+    -webkit-transform: translatey(83px) scale(1.3);
+            transform: translatey(83px) scale(1.3);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: #636161;
+  }
+  ._input::-webkit-input-placeholder {
+    color: #bebaba;
+    font-size: 0.8em;
+  }
+  ._input:-ms-input-placeholder {
+    color: #bebaba;
+    font-size: 0.8em;
+  }
+  ._input::-ms-input-placeholder {
+    color: #bebaba;
+    font-size: 0.8em;
+  }
+  ._input::placeholder {
+    color: #bebaba;
+    font-size: 0.8em;
+  }
+  ._input:focus::-webkit-input-placeholder {
+    font-size: 0;
+  }
+  ._input:focus:-ms-input-placeholder {
+    font-size: 0;
+  }
+  ._input:focus::-ms-input-placeholder {
+    font-size: 0;
+  }
+  ._input:focus::placeholder {
+    font-size: 0;
+  }
+  ._button {
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 13.5em;
+    height: 4em;
+    font-size: 1em;
+    padding: 5px;
+    border-radius: 38px;
+    margin: auto;
+  }
+  .seta {
+    display: none;
+  }
+  .cartao {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 30px;
+  }
+  #card1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+    margin-top: 200px;
+  }
+  #card2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+    margin-top: 500px;
+  }
+  #card3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+    margin-top: 502px;
+  }
+  .flip1,
+  .flip2,
+  .flip3 {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 200px;
+    color: #DEDFE4;
+  }
+  #frente {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    background-color: #1F2025;
+  }
+  #verso {
+    color: #DEDFE4;
+    background-color: #292A2F;
+  }
+  .face {
+    position: absolute;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 10px;
+    height: 480px;
+    width: 89.4vw;
+    font-family: "PT Mono", monospace;
+    font-weight: lighter;
+    -ms-flex-preferred-size: 1fr 1fr 1fr;
+        flex-basis: 1fr 1fr 1fr;
+    margin: 0px auto;
+  }
+  #pai1,
+  #pai2,
+  #pai3 {
+    text-align: center;
+    font-size: 10vw;
+    margin-top: 50px;
+  }
+  #filho1,
+  #filho2,
+  #filho3 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 80px;
+    word-break: break-all;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1030px) and (orientation: landscape) {
+  .face {
+    height: 37vw;
+    width: 42vh;
+  }
+  .cartao {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 737px) and (max-width: 1023px) and (orientation: landscape) {
+  body {
+    overflow-y: auto;
+  }
+  .face {
+    height: 36vw;
+    width: 31vh;
+  }
+  .cartao {
+    margin-top: 20px;
+  }
+  #pai1,
+  #pai2,
+  #pai3 {
+    font-size: 1.6em;
+  }
+  #filho1,
+  #filho2,
+  #filho3 {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (width: 812px) and (height: 375px) and (orientation: landscape) {
+  body {
+    overflow-y: auto;
+  }
+  .face {
+    height: 36vw;
+    width: 70vh;
+  }
+  .cartao {
+    margin-top: 20px;
+  }
+  #pai1,
+  #pai2,
+  #pai3 {
+    font-size: 1.6em;
+  }
+  #filho1,
+  #filho2,
+  #filho3 {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (width: 823px) and (orientation: landscape) {
+  .face {
+    height: 39vw;
+    width: 63vh;
+  }
+  .cartao {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 568px) and (max-width: 736px) and (orientation: landscape) {
+  body {
+    overflow-y: auto;
+  }
+  .face {
+    height: 43vw;
+    width: 57vh;
+  }
+  .cartao {
+    margin-top: 20px;
+  }
+  #pai1,
+  #pai2,
+  #pai3 {
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (width: 720px) and (orientation: landscape) {
+  .face {
+    height: 39vw;
+    width: 43vh;
+  }
+}
+
+@media screen and (width: 653px) and (height: 280px) and (orientation: landscape) {
+  body {
+    overflow-y: auto;
+  }
+  .face {
+    height: 42vw;
+    width: 75vh;
+  }
+  .cartao {
+    margin-top: 16px;
+  }
+  #pai1,
+  #pai2,
+  #pai3 {
+    font-size: 1.6em;
+  }
+  #filho1,
+  #filho2,
+  #filho3 {
+    font-size: 1.4em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
