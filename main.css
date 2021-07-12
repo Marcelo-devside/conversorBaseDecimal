@@ -146,22 +146,6 @@ body {
   font-size: 0.8em;
 }
 
-._input:focus::-webkit-input-placeholder {
-  font-size: 0;
-}
-
-._input:focus:-ms-input-placeholder {
-  font-size: 0;
-}
-
-._input:focus::-ms-input-placeholder {
-  font-size: 0;
-}
-
-._input:focus::placeholder {
-  font-size: 0;
-}
-
 .cartao {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,7 +159,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 1;
 }
 
 #card1,
@@ -201,7 +184,16 @@ body {
   margin-top: 200px;
 }
 
-#verso {
+#frente1,
+#frente2,
+#frente3 {
+  background: #1F2025;
+  content: "";
+}
+
+#verso1,
+#verso2,
+#verso3 {
   color: #DEDFE4;
   background-color: #292A2F;
 }
@@ -498,22 +490,6 @@ body {
             box-shadow: none;
     color: #636161;
   }
-  ._input::-webkit-input-placeholder {
-    color: #bebaba;
-    font-size: 0.8em;
-  }
-  ._input:-ms-input-placeholder {
-    color: #bebaba;
-    font-size: 0.8em;
-  }
-  ._input::-ms-input-placeholder {
-    color: #bebaba;
-    font-size: 0.8em;
-  }
-  ._input::placeholder {
-    color: #bebaba;
-    font-size: 0.8em;
-  }
   ._button {
     display: block;
     -webkit-box-pack: center;
@@ -540,7 +516,6 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 5px;
   }
   #card1 {
     display: -webkit-box;
