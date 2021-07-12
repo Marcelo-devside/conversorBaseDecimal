@@ -467,6 +467,9 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
   }
+  ::-webkit-scrollbar {
+    display: none;
+  }
   ._cabecalho {
     font-size: 5vmin;
     line-height: 11vw;
@@ -626,6 +629,9 @@ body {
   .face {
     width: 31vw;
   }
+  ::-webkit-scrollbar {
+    display: none;
+  }
   .cartao {
     margin-top: 50px;
   }
@@ -634,6 +640,9 @@ body {
 @media screen and (min-width: 737px) and (max-width: 1023px) and (orientation: landscape) {
   body {
     overflow-y: auto;
+  }
+  ::-webkit-scrollbar {
+    display: none;
   }
   .face {
     width: 31vw;
@@ -656,6 +665,9 @@ body {
 @media screen and (width: 812px) and (height: 375px) and (orientation: landscape) {
   body {
     overflow-y: auto;
+  }
+  ::-webkit-scrollbar {
+    display: none;
   }
   .face {
     height: 36vw;
@@ -681,6 +693,9 @@ body {
     height: 39vw;
     width: 63vh;
   }
+  ::-webkit-scrollbar {
+    display: none;
+  }
   .cartao {
     margin-top: 50px;
   }
@@ -689,6 +704,9 @@ body {
 @media screen and (min-width: 568px) and (max-width: 736px) and (orientation: landscape) {
   body {
     overflow-y: auto;
+  }
+  ::-webkit-scrollbar {
+    display: none;
   }
   .face {
     height: 43vw;
@@ -709,11 +727,17 @@ body {
     height: 39vw;
     width: 43vh;
   }
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @media screen and (width: 653px) and (height: 280px) and (orientation: landscape) {
   body {
     overflow-y: auto;
+  }
+  ::-webkit-scrollbar {
+    display: none;
   }
   .face {
     height: 42vw;
