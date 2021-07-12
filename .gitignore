@@ -1,5 +1,6 @@
 _corpo.scss
 _is-queries.scss
+_normalize.scss
 _responsive.scss
 _variaveis.scss
 .editorconfig
