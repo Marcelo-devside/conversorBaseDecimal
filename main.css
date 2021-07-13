@@ -473,7 +473,7 @@ body {
     display: none;
   }
   ._cabecalho {
-    font-size: 5vmin;
+    font-size: 4vmin;
     line-height: 11vw;
   }
   ._entrada {
@@ -527,7 +527,8 @@ body {
   #frente1,
   #frente2,
   #frente3 {
-    background-color: #1F2025;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
   }
   #card1 {
     display: -webkit-box;
@@ -572,7 +573,6 @@ body {
     border-radius: 10px;
     height: 355px;
     width: 89.4vw;
-    background-color: red;
   }
   #pai1,
   #pai2,
