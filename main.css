@@ -225,6 +225,36 @@ body {
   background-color: #1F2025;
 }
 
+[data-anime] {
+  opacity: 0;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+
+[data-anime].animate {
+  opacity: 1;
+}
+
+[data-animes] {
+  opacity: 0;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+
+[data-animes].animates {
+  opacity: 1;
+}
+
+[data-animesi] {
+  opacity: 0;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+
+[data-animesi].animatesi {
+  opacity: 1;
+}
+
 #pai1,
 #pai2,
 #pai3 {

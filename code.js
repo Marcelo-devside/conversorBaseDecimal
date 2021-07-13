@@ -37,7 +37,15 @@ const card2 = document.querySelector("#card2")
 card2.classList.toggle("flip2", false)
 const card3 = document.querySelector("#card3")
 card3.classList.toggle("flip3", false)
+//--------------------------------------------
+const carde1 = document.querySelector('[data-anime]')
+carde1.classList.toggle("animate", true)
+const carde2 = document.querySelector('[data-animes]')
+carde2.classList.toggle("animates", true)
+const carde3 = document.querySelector('[data-animesi]')
+carde3.classList.toggle("animatesi", true)
 }
+
 function offCards(){
 const card = document.querySelector("#card1")
 card.classList.toggle("flip1", true)
@@ -45,4 +53,11 @@ const card2 = document.querySelector("#card2")
 card2.classList.toggle("flip2", true)
 const card3 = document.querySelector("#card3")
 card3.classList.toggle("flip3", true)
+//---------------------------------------------
+const carde1 = document.querySelector('[data-anime]')
+carde1.classList.toggle("animate", false)
+const carde2 = document.querySelector('[data-animes]')
+carde2.classList.toggle("animates", false)
+const carde3 = document.querySelector('[data-animesi]')
+carde3.classList.toggle("animatesi", false)
 }
