@@ -21,13 +21,13 @@ body {
 ._cabecalho {
   position: relative;
   font-size: 2.6vw;
-  padding-top: 5px;
+  padding-top: 1px;
   -webkit-animation: fade 1ms 1s forwards;
           animation: fade 1ms 1s forwards;
   opacity: 0;
   color: #e5e5e5;
   text-align: center;
-  top: 50px;
+  top: 10px;
   font-family: 'Fjalla One', sans-serif;
   margin: 0 auto;
 }
@@ -85,7 +85,6 @@ body {
 }
 
 ._button {
-  z-index: 3;
   width: 7em;
   padding: 11px;
   outline: none;
@@ -99,7 +98,6 @@ body {
 }
 
 ._input {
-  z-index: 2;
   width: 9em;
   height: 1.8em;
   -webkit-box-shadow: 0px 3px 6px #777777;
@@ -200,7 +198,6 @@ body {
 #frente1,
 #frente2,
 #frente3 {
-  color: #1F2025;
   background-color: #1F2025;
 }
 
@@ -225,6 +222,7 @@ body {
   margin: 0px auto;
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
+  background-color: #1F2025;
 }
 
 #pai1,
@@ -483,7 +481,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 4.75em auto 0 auto;
+    margin: 1em auto 0 auto;
   }
   ._input {
     display: block;
@@ -525,6 +523,11 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  #frente1,
+  #frente2,
+  #frente3 {
+    background-color: #1F2025;
   }
   #card1 {
     display: -webkit-box;
@@ -569,6 +572,7 @@ body {
     border-radius: 10px;
     height: 355px;
     width: 89.4vw;
+    background-color: red;
   }
   #pai1,
   #pai2,
@@ -593,6 +597,9 @@ body {
   ::-webkit-scrollbar {
     display: none;
   }
+  .seta {
+    display: inherit;
+  }
   .cartao {
     margin-top: 50px;
   }
@@ -604,6 +611,9 @@ body {
   }
   ::-webkit-scrollbar {
     display: none;
+  }
+  .seta {
+    display: inherit;
   }
   .face {
     width: 31vw;
@@ -629,6 +639,9 @@ body {
   }
   ::-webkit-scrollbar {
     display: none;
+  }
+  .seta {
+    display: inherit;
   }
   .face {
     height: 36vw;
@@ -657,6 +670,9 @@ body {
   ::-webkit-scrollbar {
     display: none;
   }
+  .seta {
+    display: inherit;
+  }
   .cartao {
     margin-top: 50px;
   }
@@ -668,6 +684,9 @@ body {
   }
   ::-webkit-scrollbar {
     display: none;
+  }
+  .seta {
+    display: inherit;
   }
   .face {
     height: 43vw;
@@ -691,6 +710,9 @@ body {
   ::-webkit-scrollbar {
     display: none;
   }
+  .seta {
+    display: inherit;
+  }
 }
 
 @media screen and (width: 653px) and (height: 280px) and (orientation: landscape) {
@@ -699,6 +721,9 @@ body {
   }
   ::-webkit-scrollbar {
     display: none;
+  }
+  .seta {
+    display: inherit;
   }
   .face {
     height: 42vw;
