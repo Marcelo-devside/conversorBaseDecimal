@@ -15,7 +15,7 @@ body {
           box-sizing: border-box;
   overflow: hidden;
   height: 100%;
-  background-color: #1F2025;
+  background-color: #11041c;
 }
 
 ._cabecalho {
@@ -25,7 +25,7 @@ body {
   -webkit-animation: fade 1ms 1s forwards;
           animation: fade 1ms 1s forwards;
   opacity: 0;
-  color: #e5e5e5;
+  color: #e2eafc;
   text-align: center;
   top: 10px;
   font-family: 'Fjalla One', sans-serif;
@@ -35,7 +35,7 @@ body {
 ._cabecalho::after {
   -webkit-animation: text-reveal 3s ease forwards;
           animation: text-reveal 3s ease forwards;
-  background-color: #1F2025;
+  background-color: #11041c;
   content: "";
   display: block;
   position: absolute;
@@ -90,9 +90,9 @@ body {
   outline: none;
   border-radius: 5px;
   cursor: pointer;
-  border: none;
-  background-color: #3EA6FF;
-  color: #1F2025;
+  border: 1px solid #40047a;
+  background-color: #170527;
+  color: #e2eafc;
   font-family: "Rubik", sans-serif;
   font-weight: 600;
 }
@@ -198,14 +198,14 @@ body {
 #frente3 {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  background-color: #1F2025;
+  background-color: #11041c;
 }
 
 #verso1,
 #verso2,
 #verso3 {
-  color: #DEDFE4;
-  background-color: #292A2F;
+  color: #e2eafc;
+  background-color: #20003f;
   -webkit-box-shadow: 0px 0px 20px 0px #00000087;
           box-shadow: 0px 0px 20px 0px #00000087;
 }
@@ -224,7 +224,7 @@ body {
   margin: 0px auto;
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
-  background-color: #1F2025;
+  background-color: #11041c;
 }
 
 [data-anime] {
@@ -263,8 +263,10 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
   font-size: 2.6em;
-  margin-top: 50px;
-  line-height: 0.1;
+  background: #170527;
+  padding: 40px 0px 20px 0px;
+  margin: 0;
+  border-radius: 13px 13px 0 0;
 }
 
 #filho1,
@@ -274,6 +276,8 @@ body {
   margin-bottom: 80px;
   word-break: break-all;
   font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  font-size: 1.7em;
 }
 
 @-webkit-keyframes text-reveal {
@@ -498,7 +502,7 @@ body {
 
 @media screen and (max-width: 567px) {
   body {
-    overflow-y: hidden;
+    overflow-y: auto;
     overflow-x: hidden;
   }
   ::-webkit-scrollbar {
@@ -555,7 +559,6 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    overflow-y: auto;
   }
   #frente1,
   #frente2,
@@ -574,7 +577,7 @@ body {
             transform-style: preserve-3d;
     -webkit-transition: all ease-in 0.3s;
     transition: all ease-in 0.3s;
-    margin-top: 55px;
+    margin-top: 12px;
   }
   #card2 {
     display: -webkit-box;
@@ -612,14 +615,13 @@ body {
   #pai3 {
     text-align: center;
     font-size: 10vw;
-    margin-top: 50px;
   }
   #filho1,
   #filho2,
   #filho3 {
     font-size: 1.7em;
     text-align: center;
-    line-height: 29px;
+    line-height: 31px;
   }
 }
 
