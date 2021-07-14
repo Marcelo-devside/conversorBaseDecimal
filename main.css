@@ -90,7 +90,7 @@ body {
   outline: none;
   border-radius: 5px;
   cursor: pointer;
-  border: 1px solid #40047a;
+  border: 1px solid #7c39bc;
   background-color: #170527;
   color: #e2eafc;
   font-family: "Rubik", sans-serif;
@@ -204,10 +204,9 @@ body {
 #verso1,
 #verso2,
 #verso3 {
+  border: 1px solid #7c39bc;
   color: #e2eafc;
   background-color: #20003f;
-  -webkit-box-shadow: 0px 0px 20px 0px #00000087;
-          box-shadow: 0px 0px 20px 0px #00000087;
 }
 
 .face {
@@ -266,7 +265,7 @@ body {
   background: #170527;
   padding: 40px 0px 20px 0px;
   margin: 0;
-  border-radius: 13px 13px 0 0;
+  border-radius: 20px 20px 0 0;
 }
 
 #filho1,
