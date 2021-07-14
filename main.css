@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Mono:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 * {
@@ -90,7 +90,7 @@ body {
   outline: none;
   border-radius: 5px;
   cursor: pointer;
-  border: 1px solid #7c39bc;
+  border: 1px solid #7c39bc8c;
   background-color: #170527;
   color: #e2eafc;
   font-family: "Rubik", sans-serif;
@@ -204,7 +204,7 @@ body {
 #verso1,
 #verso2,
 #verso3 {
-  border: 1px solid #7c39bc;
+  border: 1px solid #7c39bc8c;
   color: #e2eafc;
   background-color: #20003f;
 }
@@ -259,7 +259,7 @@ body {
 #pai1,
 #pai2,
 #pai3 {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   font-size: 2.6em;
   background: #170527;
@@ -271,10 +271,12 @@ body {
 #filho1,
 #filho2,
 #filho3 {
+  text-transform: uppercase;
   text-align: center;
   margin-bottom: 80px;
   word-break: break-all;
-  font-family: 'Roboto Mono', monospace;
+  letter-spacing: 0.2em;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   font-size: 1.7em;
 }
@@ -543,9 +545,11 @@ body {
     padding: 5px;
     border-radius: 38px;
     margin: auto;
+    border: 1px solid #7c39bc;
   }
   .seta {
-    display: none;
+    width: 0px;
+    height: 0px;
   }
   .cartao {
     display: -webkit-box;
@@ -632,7 +636,13 @@ body {
     display: none;
   }
   .seta {
-    display: initial;
+    width: 1.5625em;
+    height: 1.5625em;
+    padding-top: 0.3125em;
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+    -webkit-animation: is-bouncing 0.5s ease-in alternate infinite;
+            animation: is-bouncing 0.5s ease-in alternate infinite;
   }
   .cartao {
     margin-top: 50px;
@@ -647,7 +657,13 @@ body {
     display: none;
   }
   .seta {
-    display: initial;
+    width: 1.5625em;
+    height: 1.5625em;
+    padding-top: 0.3125em;
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+    -webkit-animation: is-bouncing 0.5s ease-in alternate infinite;
+            animation: is-bouncing 0.5s ease-in alternate infinite;
   }
   .face {
     width: 31vw;
@@ -675,7 +691,13 @@ body {
     display: none;
   }
   .seta {
-    display: initial;
+    width: 1.5625em;
+    height: 1.5625em;
+    padding-top: 0.3125em;
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+    -webkit-animation: is-bouncing 0.5s ease-in alternate infinite;
+            animation: is-bouncing 0.5s ease-in alternate infinite;
   }
   .face {
     height: 36vw;
@@ -705,7 +727,13 @@ body {
     display: none;
   }
   .seta {
-    display: initial;
+    width: 1.5625em;
+    height: 1.5625em;
+    padding-top: 0.3125em;
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+    -webkit-animation: is-bouncing 0.5s ease-in alternate infinite;
+            animation: is-bouncing 0.5s ease-in alternate infinite;
   }
   .cartao {
     margin-top: 50px;
@@ -720,7 +748,13 @@ body {
     display: none;
   }
   .seta {
-    display: initial;
+    width: 1.5625em;
+    height: 1.5625em;
+    padding-top: 0.3125em;
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+    -webkit-animation: is-bouncing 0.5s ease-in alternate infinite;
+            animation: is-bouncing 0.5s ease-in alternate infinite;
   }
   .face {
     height: 43vw;
@@ -745,7 +779,13 @@ body {
     display: none;
   }
   .seta {
-    display: initial;
+    width: 1.5625em;
+    height: 1.5625em;
+    padding-top: 0.3125em;
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+    -webkit-animation: is-bouncing 0.5s ease-in alternate infinite;
+            animation: is-bouncing 0.5s ease-in alternate infinite;
   }
 }
 
@@ -757,7 +797,13 @@ body {
     display: none;
   }
   .seta {
-    display: initial;
+    width: 1.5625em;
+    height: 1.5625em;
+    padding-top: 0.3125em;
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+    -webkit-animation: is-bouncing 0.5s ease-in alternate infinite;
+            animation: is-bouncing 0.5s ease-in alternate infinite;
   }
   .face {
     height: 42vw;
