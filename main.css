@@ -498,7 +498,7 @@ body {
 
 @media screen and (max-width: 567px) {
   body {
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
   }
   ::-webkit-scrollbar {
@@ -555,6 +555,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    overflow-y: auto;
   }
   #frente1,
   #frente2,
