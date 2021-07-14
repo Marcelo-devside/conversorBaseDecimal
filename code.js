@@ -61,3 +61,13 @@ carde2.classList.toggle("animates", false)
 const carde3 = document.querySelector('[data-animesi]')
 carde3.classList.toggle("animatesi", false)
 }
+
+function typeWriter(elemento){
+    const textoArray = elemento.innerHTML.split('')
+    elemento.innerHTML = ''
+    textoArray.forEach((letra, i) => {
+        setTimeout(() => elemento.innerHTML += letra, 150 * i )
+    })
+}
+const titulo = document.querySelector('#escrita')
+typeWriter(titulo)

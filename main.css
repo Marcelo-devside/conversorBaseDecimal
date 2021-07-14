@@ -32,19 +32,6 @@ body {
   margin: 0 auto;
 }
 
-._cabecalho::after {
-  -webkit-animation: text-reveal 3s ease forwards;
-          animation: text-reveal 3s ease forwards;
-  background-color: #11041c;
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
 ._entrada {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,8 +168,8 @@ body {
           justify-content: center;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-transition: all ease-in 0.3s;
-  transition: all ease-in 0.3s;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
 }
 
 .flip1,
