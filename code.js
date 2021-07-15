@@ -1,3 +1,8 @@
+function inicia(){
+    document.querySelector('.marcar').hidden = true
+}
+window.addEventListener("load",inicia)
+
 const entr = document.querySelector("#input")
 entr.addEventListener("keypress", function(e){
     if (!checkInput(e)){
