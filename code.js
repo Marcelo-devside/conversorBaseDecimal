@@ -71,3 +71,11 @@ function typeWriter(elemento){
 }
 const titulo = document.querySelector('#escrita')
 typeWriter(titulo)
+
+
+const fundo = document.querySelector('.pagina-fundo')
+const tenta= document.querySelector(".marcar")
+fundo.addEventListener('click', ()=>{ 
+     tenta.setAttribute("checked", "checked")
+    //  return tenta
+    })

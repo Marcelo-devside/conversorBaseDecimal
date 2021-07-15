@@ -10,46 +10,49 @@
     <link rel="shortcut icon" href="image/outline_calculate_white_24dp.png" type="image/x-icon">
   </head>
   <body>
-    <header class="_cabecalho">
-      <h1 id= "escrita">        Transforme base decimal em outras bases!</h1>
-    </header>
-    <section class="_entrada">
+    <div class="pagina-fundo">
+      <input type="checkbox" class="marcar">
+      <header class="_cabecalho">
+        <h1 id= "escrita">        Transforme base decimal em outras bases!</h1>
+      </header>
+      <section class="_entrada">
       
-      <span class="item">
-        <input type="text"  class="_input" id="input" name="dig" size ="10"  maxlength="15"  placeholder="Digite o número" onclick="offCards()">
-      </span>
-      <span class="item">
-        <button class="_button" onclick="pressOk()">OK</button>
-      </span>
-      <span class="item">
-        <img src="image/west_black_24dp.svg" alt="seta indicativa" class="seta">
-      </span>
-    </section>
-          <div class="cartao">
-            <div class="flip1" id="card1">
-              <div class="face" id="frente1">
+        <span class="item">
+          <input type="text"  class="_input" id="input" name="dig" size ="10"  maxlength="15"  placeholder="Digite o número" onclick="offCards()">
+        </span>
+        <span class="item">
+          <button class="_button" onclick="pressOk()">OK</button>
+        </span>
+        <span class="item">
+          <img src="image/west_black_24dp.svg" alt="seta indicativa" class="seta">
+        </span>
+      </section>
+            <div class="cartao">
+              <div class="flip1" id="card1">
+                <div class="face" id="frente1">
+                </div>
+                <div class="face" id="verso1" data-anime="center">
+                  <h1 id="pai1">BINÁRIO</h1>
+                  <h1 id="filho1"></h1>
+                </div>
               </div>
-              <div class="face" id="verso1" data-anime="center">
-                <h1 id="pai1">BINÁRIO</h1>
-                <h1 id="filho1"></h1>
-              </div>
+                  <div class="flip2" id="card2">
+                    <div class="face" id="frente2">
+                    </div>
+                    <div class="face" id="verso2" data-animes="center">
+                      <h1 id="pai2">OCTAL</h1>
+                      <h1 id="filho2"></h1>
+                    </div>
+                  </div>
+                  <div class="flip3" id="card3">
+                    <div class="face" id="frente3">
+                    </div>
+                    <div class="face" id="verso3" data-animesi="center">
+                      <h1 id="pai3">HEXADECIMAL</h1>
+                      <h1 id="filho3"></h1>
+                    </div>
+                  </div>
             </div>
-                <div class="flip2" id="card2">
-                  <div class="face" id="frente2">
-                  </div>
-                  <div class="face" id="verso2" data-animes="center">
-                    <h1 id="pai2">OCTAL</h1>
-                    <h1 id="filho2"></h1>
-                  </div>
-                </div>
-                <div class="flip3" id="card3">
-                  <div class="face" id="frente3">
-                  </div>
-                  <div class="face" id="verso3" data-animesi="center">
-                    <h1 id="pai3">HEXADECIMAL</h1>
-                    <h1 id="filho3"></h1>
-                  </div>
-                </div>
-          </div>
+    </div>
   </body>
 </html>

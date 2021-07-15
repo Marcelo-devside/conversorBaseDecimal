@@ -7,7 +7,8 @@
 }
 
 html,
-body {
+body,
+.pagina-fundo {
   padding: 0px;
   border: 0px;
   margin: 0px;
@@ -15,7 +16,12 @@ body {
           box-sizing: border-box;
   overflow: hidden;
   height: 100%;
+  width: 100%;
   background-color: #11041c;
+}
+
+.marcar {
+  background-color: red;
 }
 
 ._cabecalho {
@@ -489,7 +495,8 @@ body {
 }
 
 @media screen and (max-width: 567px) {
-  body {
+  body,
+  .pagina-fundo {
     overflow-y: auto;
     overflow-x: hidden;
   }
@@ -565,8 +572,8 @@ body {
             justify-content: center;
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
-    -webkit-transition: all ease-in 0.3s;
-    transition: all ease-in 0.3s;
+    -webkit-transition: all ease-in 0.5s;
+    transition: all ease-in 0.5s;
     margin-top: 12px;
   }
   #card2 {
@@ -578,8 +585,8 @@ body {
             justify-content: center;
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
-    -webkit-transition: all ease-in 0.3s;
-    transition: all ease-in 0.3s;
+    -webkit-transition: all ease-in 0.5s;
+    transition: all ease-in 0.5s;
     margin-top: 370px;
   }
   #card3 {
@@ -591,8 +598,8 @@ body {
             justify-content: center;
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
-    -webkit-transition: all ease-in 0.3s;
-    transition: all ease-in 0.3s;
+    -webkit-transition: all ease-in 0.5s;
+    transition: all ease-in 0.5s;
     margin-top: 370px;
   }
   .face {
@@ -616,6 +623,9 @@ body {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1030px) and (orientation: landscape) {
+  body, .pagina-fundo {
+    overflow-y: auto;
+  }
   .face {
     width: 31vw;
   }
@@ -637,7 +647,7 @@ body {
 }
 
 @media screen and (min-width: 737px) and (max-width: 1023px) and (orientation: landscape) {
-  body {
+  body, .pagina-fundo {
     overflow-y: auto;
   }
   ::-webkit-scrollbar {
@@ -671,7 +681,7 @@ body {
 }
 
 @media screen and (width: 812px) and (height: 375px) and (orientation: landscape) {
-  body {
+  body, .pagina-fundo {
     overflow-y: auto;
   }
   ::-webkit-scrollbar {
@@ -706,6 +716,9 @@ body {
 }
 
 @media screen and (width: 823px) and (orientation: landscape) {
+  body, .pagina-fundo {
+    overflow-y: auto;
+  }
   .face {
     height: 39vw;
     width: 63vh;
@@ -728,7 +741,7 @@ body {
 }
 
 @media screen and (min-width: 568px) and (max-width: 736px) and (orientation: landscape) {
-  body {
+  body, .pagina-fundo {
     overflow-y: auto;
   }
   ::-webkit-scrollbar {
@@ -758,6 +771,9 @@ body {
 }
 
 @media screen and (width: 720px) and (orientation: landscape) {
+  body, .pagina-fundo {
+    overflow-y: auto;
+  }
   .face {
     height: 39vw;
     width: 43vh;
@@ -777,7 +793,7 @@ body {
 }
 
 @media screen and (width: 653px) and (height: 280px) and (orientation: landscape) {
-  body {
+  body, .pagina-fundo {
     overflow-y: auto;
   }
   ::-webkit-scrollbar {
